@@ -1,10 +1,11 @@
 // Slider.js
 import React, { useState } from 'react';
+import image1 from '../assets/tech2.jpeg'
+import image2 from '../assets/tech3.jpeg'
+import image3 from '../assets/water-tec-image.jpg'
 
 const images = [
-  'https://placekitten.com/800/400',
-  'https://placekitten.com/801/400',
-  'https://placekitten.com/802/400',
+  image1, image2, image3
   // Add more image URLs as needed
 ];
 
