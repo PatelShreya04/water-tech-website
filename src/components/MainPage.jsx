@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import Slider from './Slider'
 import HeroSection from './HeroSection'
+import Footer from './Footer'
 
 const MainPage = () => {
   return (
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Nav />
       <Slider />
       <HeroSection />
+      <Footer />
     </div>
   )
 }
