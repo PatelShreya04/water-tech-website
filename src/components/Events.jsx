@@ -18,6 +18,7 @@ const Events = () => {
           {/* Front of the card */}
           <div className={`absolute inset-0 bg-primary rounded-xl p-6 ${isFlipped ? 'hidden' : ''}`}>
             <h2 className="text-2xl font-bold text-white">Event-1</h2>
+            <p className='text-white font-light text-center mt-20'>Click Here!!</p>
           </div>
 
           {/* Back of the card */}
