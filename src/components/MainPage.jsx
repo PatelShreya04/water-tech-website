@@ -5,6 +5,7 @@ import HeroSection from './HeroSection'
 import Footer from './Footer'
 import Brands from './Brands'
 import Events from './Events'
+import Products from './Products'
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       <Slider />
       <HeroSection />
       <Brands />
+      <Products />
       <Events />
       <Footer />
     </div>

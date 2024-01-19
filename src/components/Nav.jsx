@@ -19,7 +19,8 @@ const Nav = () => {
                 <div className='hidden md:flex md:space-x-10 font-sans text-primary font-semibold text-lg'>
                     <a href="/">Home</a>
                     <a href="#about">About</a>
-                    <a href="/brands">Our Brands</a>
+                    <a href="#brands">Our Brands</a>
+                    <a href="#products">Products</a>
                     <a href="#events">Upcoming Events</a>    
                     <a href="#contactus">Contact Us</a>
 
@@ -41,7 +42,8 @@ const Nav = () => {
                     <div className='flex flex-col space-y-2 text-center'>
                         <a href="/">Home</a>
                         <a href="#about">About</a>
-                        <a href="/brands">Our Brands</a>
+                        <a href="#brands">Our Brands</a>
+                        <a href="#products">Products</a>
                         <a href="#events">Upcoming Events</a>
                         <a href="#contactus">Contact Us</a>
                     </div>

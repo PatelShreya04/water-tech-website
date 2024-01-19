@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <div className='flex md:flex-row flex-col md:space-x-20 md:space-y-0 space-y-6 bg-secondary text-white p-5'>
+            <div className='flex md:flex-row flex-col md:space-x-20 md:space-y-0 space-y-6 bg-water text-white p-5'>
                 <div className='space-y-2'>
                     <p className='text-xl font-bold' id="contactus">Contact</p>
                     <p>123 Tech Street, Cyberland,  </p>

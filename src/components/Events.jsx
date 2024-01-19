@@ -1,6 +1,6 @@
 // Events.js
 import React, { useState } from 'react';
-import '../assets/css/Events.css';
+
 
 const Events = () => {
   const [isFlipped, setIsFlipped] = useState(false);

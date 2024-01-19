@@ -1,7 +1,7 @@
 // Slider.js
 import React, { useState } from 'react';
-import image1 from '../assets/product1.jpg'
-import image2 from '../assets/product2p.png'
+import image1 from '../assets/Pumps/pump.jpg'
+import image2 from '../assets/filters/uf-filter.jpg'
 import image3 from '../assets/product3.jpg'
 
 const images = [
