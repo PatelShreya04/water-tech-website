@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import the hamburger icon
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo-removebg-preview.png';
 
 const Nav = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,7 +10,8 @@ const Nav = () => {
     };
 
     return (
-        <div className='p-6'>
+        <div className='pl-6 pr-6 pt-4  mb-4 bg-gray-100'>
+
             <div className='flex justify-between items-center'>
                 <div>
                     <img src={logo} className='h-16 md:w-40 w-[180px]' alt='Logo' />

@@ -7,9 +7,11 @@ import Brands from './Brands'
 import Events from './Events'
 import Products from './Products'
 
+
 const MainPage = () => {
   return (
     <div>
+    
       <Nav />
       <Slider />
       <HeroSection />
