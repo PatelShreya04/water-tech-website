@@ -10,11 +10,11 @@ const Nav = () => {
     };
 
     return (
-        <div className='pl-6 pr-6 pt-4  mb-4 bg-gray-100'>
+        <div className=' pl-4 pr-4  bg-gray-300'>
 
             <div className='flex justify-between items-center'>
                 <div>
-                    <img src={logo} className='h-16 md:w-40 w-[180px]' alt='Logo' />
+                    <img src={logo} className='h-24 md:w-38 w-[180px]' alt='Logo' />
                     
                 </div>
                 <div className='hidden md:flex md:space-x-10 font-sans text-primary font-semibold text-lg'>
@@ -29,9 +29,9 @@ const Nav = () => {
                 <div className='md:hidden'>
 
                     {isNavOpen ? (
-                        <FaTimes onClick={toggleNav} className='cursor-pointer' />
+                        <FaTimes onClick={toggleNav} className='cursor-pointer h-24' />
                     ) : (
-                        <FaBars onClick={toggleNav} className='cursor-pointer' />
+                        <FaBars onClick={toggleNav} className='cursor-pointer h-24' />
                     )}
                 </div>
 

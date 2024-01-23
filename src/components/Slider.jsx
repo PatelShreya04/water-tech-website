@@ -1,13 +1,10 @@
 // Slider.js
-import React, { useState } from 'react';
-import image1 from '../assets/Pumps/pump.jpg'
-import image2 from '../assets/filters/uf-filter.jpg'
-import image3 from '../assets/product3.jpg'
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import image1 from '../assets/slider-image-1.png';
+import image2 from '../assets/slider-image-2.jpg';
 
-const images = [
-  image1, image2, image3
-  // Add more image URLs as needed
-];
+const images = [image1, image2 /* Add more image URLs as needed */];
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,11 +17,36 @@ const Slider = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    // Change image every 5 seconds (adjust the duration as needed)
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, [currentIndex]);
+
   return (
-    <div className="slider-container relative overflow-hidden w-full md:h-[400px] flex items-center justify-center">
-      <button onClick={prevSlide} className="prev-button md:block absolute top-1/2 transform -translate-y-1/2 left-4 text-2xl text-gray-700">&#9665;</button>
-      <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slider-image w-[400px] h-[400px] md:h-[600px] lg:h-[800px] p-3" />
-      <button onClick={nextSlide} className="next-button md:block absolute top-1/2 transform -translate-y-1/2 right-4 text-2xl text-gray-700">&#9655;</button>
+    <div className="slider-container relative overflow-hidden w-full flex">
+      <button onClick={prevSlide} className="prev-button md:block absolute top-1/2 transform -translate-y-1/2 left-4 text-2xl text-gray-300">&lt;</button>
+
+      <motion.div
+        key={currentIndex}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.5, ease: 'easeInOut' }}
+      >
+        <img
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className="slider-image w-screen md:h-96"
+        />
+      </motion.div>
+
+      <button onClick={nextSlide} className="next-button md:block absolute top-1/2 transform -translate-y-1/2 right-4 text-2xl text-gray-300"> &gt; </button>
     </div>
   );
 };
