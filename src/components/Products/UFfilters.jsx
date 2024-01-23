@@ -1,24 +1,18 @@
 import React from 'react';
-import copper1 from '../../assets/filters/copper-alk-filter-1.jpg';
-import copper2 from '../../assets/filters/copper-alk-filter-2.jpg';
-import copper3 from '../../assets/filters/copper-alk-filter4.jpg';
-import copper4 from '../../assets/filters/copper-3.jpg';
-import mineral from '../../assets/filters/mineral-filter.jpg';
+
 import uv from '../../assets/filters/uf-filter.jpg';
 import f4 from '../../assets/filters/alkalinefilter4.png'
 import f10 from '../../assets/filters/alkalinefilter10.png'
 import f20 from '../../assets/filters/alkalinefilter20.png'
 import a8 from '../../assets/filters/aquauf8.png'
-import ca4 from '../../assets/filters/ca4.png'
-import ca10 from '../../assets/filters/ca10.png'
-import cf from '../../assets/filters/carbonfilter4.png'
+
 
 import Footer from '../Footer';
 import Nav from '../Nav';
 
-const Filters = () => {
+const UFFilters = () => {
   const filterImages = [
-    copper1, copper2, copper3, copper4, mineral, uv,f4,f10,f20,a8,ca4,ca10,cf
+     uv,f4,f10,f20,a8
   ];
 
   return (
@@ -38,4 +32,4 @@ const Filters = () => {
   );
 };
 
-export default Filters;
+export default UFFilters;

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import logo1 from '../assets/logo.jpg';
-import logo2 from '../assets/logo2.png';
+import logo2 from '../assets/logo2-removebg-preview.png';
 
 const Brands = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,10 +51,9 @@ const Brands = () => {
           <div className="bg-white p-4 mb-4 md:mb-0 md:mr-4">
             <img src={logo1} alt="Brand 1" className="object-cover h-52 w-54 md:h-64 md:w-54" />
           </div>
-
           {/* Brand 2 */}
-          <div className="bg-white p-4">
-            <img src={logo2} alt="Brand 2" className="object-cover h-50 w-54 md:h-54 md:w-54 pt-0 md:pt-20" />
+          <div className=" p-4">
+            <img src={logo2} alt="Brand 2" className="object-cover h-80 w-54 md:h-64 md:w-54 md:mt-20 mt-0 " />
           </div>
         </div>
       </div>
