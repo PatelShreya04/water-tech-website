@@ -38,7 +38,7 @@ const HeroSection = () => {
   return (
     <motion.dev  initial={{ opacity: 0, y: -50 }}
     animate={controls}
-    transition={{ duration: 1.5 }}
+    transition={{ duration: 0.5 }}
     className='flex md:flex-row flex-col mt-1 pl-2 pr-2'
     id="about">
 
