@@ -3,7 +3,7 @@ import Logo from '../assets/logo-removebg-preview.png'
 
 const Header = () => {
   return (
-    <div className='bg-blue-200 flex items-center justify-between p-4'>
+    <div className=' flex items-center justify-between p-4'>
       {/* Logo on the left */}
       <div className='flex items-center'>
         {/* Replace 'YourLogo.png' with the actual path to your logo image */}

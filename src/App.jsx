@@ -9,6 +9,7 @@ import Pumps from './components/Products/Pumps';
 import Cartridgepro from './components/Products/Cartridgepro';
 import UFFilters from './components/Products/UFfilters';
 import About from './components/About';
+import Contact from './components/Contact';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/products/pumps" element={<Pumps />} />
         <Route path="/products/UFfilters" element={<UFFilters />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
     </Router>

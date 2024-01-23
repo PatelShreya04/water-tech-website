@@ -15,11 +15,11 @@ const Nav = () => {
                
                 <div className=' flex md:space-x-10 space-x-4 font-sans text-white font-semibold md:text-lg text-[10px] text-center justify-center'>
                     <a href="/">Home</a>
-                    <a href="#about">About</a>
+                    <a href="/about">About</a>
                     <a href="#brands">Our Brands</a>
                     <a href="#products">Products</a>
                     <a href="#events">Upcoming Events</a>    
-                    <a href="#contactus">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
 
                 </div>
                 {/* <div className='md:hidden'>
