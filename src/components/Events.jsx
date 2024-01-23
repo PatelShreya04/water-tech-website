@@ -12,7 +12,7 @@ const Events = () => {
   return (
     <div className='mt-10 mb-12' id="events">
       <h2 className="text-4xl font-bold  text-center text-primary mb-6">Upcoming Events</h2>
-      <div className=" flex items-center justify-center ">
+      <div className=" flex items-center justify-center pl-8 pr-8 ">
         <div className={`w-96 h-[450px] perspective-1000px ${isFlipped ? 'flip' : ''}`} onClick={handleCardClick}>
           <div className={`relative h-full w-full rounded-xl shadow-xl transition-all duration-500 transform-style:preserve-3d group-hover:transform:rotateY(180deg)`}>
             {/* Front of the card */}
