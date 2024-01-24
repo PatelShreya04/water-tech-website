@@ -1,7 +1,7 @@
 // Products.js
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import cartridge from '../assets/catridge/mineral-cartridge.jpg';
 import filters from '../assets/filters/uf-filter.jpg';
 import skid1 from '../assets/skid/1.png';
