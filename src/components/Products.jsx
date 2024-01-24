@@ -57,22 +57,22 @@ const Products = () => {
     className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
     style={{ borderRadius: '8px' }}// Optional: Add border-radius for rounded corners
   />
-            <a href="/uffilters" className="mt-2 text-center text-primary font-bold   md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">UF Filters</a>
+            <p  className="mt-2 text-center text-primary font-bold   md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">UF Filters</p>
           </Link>
 
           {/* Filters Product */}
-          <a href="/filters" className="product-card">
+          <Link to="/filters" className="product-card">
             <img src={copper1} alt="Filters" className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
     style={{ borderRadius: '8px' }} />
             <p className="mt-2 text-center text-primary font-bold  md:text-2xl lg:text-[22px] text-[20px]transform hover:scale-125 transition-transform duration-300 ease-out ">Copper Alkaline Filters</p>
-          </a>
+          </Link>
 
           {/* Membrane Product */}
-          <a href="/skid" className="product-card">
+          <Link to="/skid" className="product-card">
             <img src={skid1} alt="Membrane" className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
     style={{ borderRadius: '8px' }} />
             <p className="mt-2 text-center text-primary font-bold   md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">Skid</p>
-          </a>
+          </Link>
 
         
           
