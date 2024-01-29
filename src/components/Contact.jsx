@@ -37,139 +37,128 @@ const Contact = () => {
       <Header />
       <Nav />
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 p-4 ">
-          <h2 className="text-4xl font-bold mb-6 text-primary text-center">Contact Us</h2>
-          <p>Need to get in touch? Fill this contact form.</p>
+        <div className="md:w-1/2 p-4">
+          <h2 className="text-4xl font-bold mb-6 text-primary text-center md:mt-10">Contact Us</h2>
+          <p className='text-center text-xl mt-10 '>Need to get in touch? Fill out this contact form.</p>
         </div>
-        <div className='lg:w-1/2 p-4'>
+        <div className="md:w-1/2 p-4 h-auto">
+          <div className="container mx-auto mt-4 p-5 bg-gray-100 rounded-md shadow-md flex">
+            <form onSubmit={handleFormSubmit} className="w-full">
+              <div className="mb-4">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-600">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
 
-        <div className="container mx-auto mt-4 p-5 bg-gray-100 rounded-md shadow-md flex ">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="mb-4">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-600">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                    placeholder="Your Phone Number"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-600">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
 
+              <div className="mb-4">
+                <label htmlFor="companyName" className="block text-sm font-medium text-gray-600">
+                  Company Name
+                </label>
+                <input
+                  type="text"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleChange}
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="Your Company Name"
+                  required
+                />
+              </div>
 
-          <form onSubmit={handleFormSubmit} className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3">
-            <div className="mb-4 spaxe-x-2 flex">
-              {/* <label htmlFor="name" className="block text-lg font-bold text-gray-900">
-                Name
-              </label> */}
-              <input
-                type="text"
-               
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder='Name'
-                className="w-82 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-                required
-              />
-            </div>
-            <div className='flex mb-4'>
+              <div className="mb-4">
+                <label htmlFor="category" className="block text-sm font-medium text-gray-600">
+                  Category
+                </label>
+                <select
+                  id="category"
+                  name="category"
+                  value={formData.category}
+                  onChange={handleChange}
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                >
+                  <option value="dealer">Dealer</option>
+                  <option value="individual">Individual</option>
+                  <option value="technician">Technician</option>
+                </select>
+              </div>
 
-<div className="mr-4 flex">
-  {/* <label htmlFor="email" className="block text-lg font-bold text-gray-900">
-    Email
-  </label> */}
-  <input
-    type="email"
-    id="email"
-    name="email"
-    value={formData.email}
-    onChange={handleChange}
-    placeholder='E-mail'
-                className="w-36 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-                required
-  />
-</div>
+              <div className="mb-4">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-600">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="Your Subject"
+                  required
+                />
+              </div>
 
-<div className=" flex "> {/* Added ml-4 for margin */}
-  {/* <label htmlFor="phone" className="block text-lg font-bold text-gray-900">
-    Phone
-  </label> */}
-  <input
-    type="tel"
-    id="phone"
-    name="phone"
-    value={formData.phone}
-    onChange={handleChange}
-    placeholder='Phone Number'
-                className="w-36 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-                required
-  />
-</div>
+              <div className="mb-4">
+                <label htmlFor="content" className="block text-sm font-medium text-gray-600">
+                  Content
+                </label>
+                <textarea
+                  name="content"
+                  value={formData.content}
+                  onChange={handleChange}
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="Your Content"
+                  required
+                ></textarea>
+              </div>
 
-</div>
-
-            {/* <label htmlFor="name" className="block text-lg font-bold text-gray-900">
-              Subject
-            </label> */}
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              placeholder='Subject'
-                className="w-72 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-                required
-            />
-            {/* <label htmlFor="content" className="block text-lg font-bold text-gray-900">
-              Content
-            </label> */}
-            <input
-              type="text"
-              id="content"
-              name="content"
-              value={formData.content}
-              onChange={handleChange}
-              placeholder='Content'
-              className="w-72 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-              required
-              
-            />
-            <div className='flex'>
-
-            <div className="mb-4">
-              {/* <label htmlFor="companyName" className="block text-lg font-bold text-gray-900">
-                Company Name
-              </label> */}
-              <input
-                type="text"
-                id="companyName"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleChange}
-                placeholder='Company Name'
-                className="w-36 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary text-primary"
-                required
-              />
-            </div>
-
-            <div className="mb-4">
-              {/* <label htmlFor="category" className="block text-lg font-bold text-gray-900">
-                Category
-              </label> */}
-              <select
-                id="category"
-                name="category"
-                value={formData.category}
-                onChange={handleChange}
-                className="w-36 px-4 py-2 mt-1 border rounded-md focus:outline-none focus:border-primary"
+              <button
+                type="submit"
+                className="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
               >
-                <option value="dealer">Dealer</option>
-                <option value="individual">Individual</option>
-                <option value="technician">Technician</option>
-              </select>
-            </div>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-80 focus:outline-none focus:ring focus:border-primary"
-            >
-              Send Mail
-            </button>
-          </form>
-        </div>
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       <Footer />
