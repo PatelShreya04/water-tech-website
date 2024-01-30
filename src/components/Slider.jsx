@@ -2,9 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import image1 from '../assets/slider-image-1.png';
-import image2 from '../assets/slider-image-2.jpg';
+import image2 from '../assets/slider-image-2.png';
+import image3 from "../assets/slider-image-3.png"
 
-const images = [image1, image2 /* Add more image URLs as needed */];
+const images = [image1, image2, image3 /* Add more image URLs as needed */];
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,7 @@ const Slider = () => {
     // Change image every 5 seconds (adjust the duration as needed)
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 3000);
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
@@ -29,7 +30,7 @@ const Slider = () => {
 
   return (
     <div className="slider-container relative overflow-hidden w-full flex">
-      <button onClick={prevSlide} className="prev-button md:block absolute top-1/2 transform -translate-y-1/2 left-4 text-2xl text-gray-300">&lt;</button>
+      {/* <button onClick={prevSlide} className="prev-button md:block absolute top-1/2 transform -translate-y-1/2 left-4 text-2xl text-gray-300">&lt;</button> */}
 
       <motion.div
         key={currentIndex}
@@ -46,7 +47,7 @@ const Slider = () => {
         />
       </motion.div>
 
-      <button onClick={nextSlide} className="next-button md:block absolute top-1/2 transform -translate-y-1/2 right-4 text-2xl text-gray-300"> &gt; </button>
+      {/* <button onClick={nextSlide} className="next-button md:block absolute top-1/2 transform -translate-y-1/2 right-4 text-2xl text-gray-300"> &gt; </button> */}
     </div>
   );
 };
