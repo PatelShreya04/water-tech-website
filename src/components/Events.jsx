@@ -16,11 +16,10 @@ const Events = () => {
         <div className={`w-96 h-[450px] perspective-1000px ${isFlipped ? 'flip' : ''}`} onClick={handleCardClick}>
           <div className={`relative h-full w-full rounded-xl shadow-xl transition-all duration-500 transform-style:preserve-3d group-hover:transform:rotateY(180deg)`}>
             {/* Front of the card */}
-            <div className={`absolute bg-secondary p-2 inset-0 rounded-xl ${isFlipped ? 'hidden' : ''}`}>
-              <img src={image} className="w-full h-full object-contain rounded-xl" alt="Event" />
-              <div className="absolute bottom-0 left-0 right-0 bg-secondary p-2 text-center">
-                <p className="text-white cursor-pointer hover:underline">Click Here</p>
-              </div>
+            <div className={`absolute bg-transperant border-secondary p-2 inset-0 rounded-xl ${isFlipped ? 'hidden' : ''}`}>
+              <img src={image} className="w-full pb-4 object-contain rounded-xl hover:scale-110" alt="Event" />
+              
+             
             </div>
 
             {/* Back of the card */}

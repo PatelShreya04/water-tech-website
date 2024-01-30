@@ -12,7 +12,7 @@ const Header = () => {
       </div>
 
       {/* Email and Contact Number on the right */}
-      <div className='flex-col items-center md:text-lg text-sm font-medium '>
+      <div className='flex-col items-center md:text-sm text-[10px] font-medium '>
         <p className='text-black mr-4'>shreyawatertechllp@gmail.com</p>
         <p className='text-black'> +91 9898650485 </p>
       </div>

@@ -5,43 +5,43 @@ import logo1 from '../assets/logo.jpg';
 import logo2 from '../assets/logo2-removebg-preview.png';
 
 const Brands = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const controls = useAnimation();
+  // const [isVisible, setIsVisible] = useState(false);
+  // const controls = useAnimation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Get the distance between the top of the page and the bottom of the Brands section
-      const sectionOffset = document.getElementById('brands').offsetTop;
-      const scrollPosition = window.scrollY + window.innerHeight;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     // Get the distance between the top of the page and the bottom of the Brands section
+  //     const sectionOffset = document.getElementById('brands').offsetTop;
+  //     const scrollPosition = window.scrollY + window.innerHeight;
 
-      // Check if the user has scrolled to or past the Brands section
-      if (scrollPosition > sectionOffset) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+  //     // Check if the user has scrolled to or past the Brands section
+  //     if (scrollPosition > sectionOffset) {
+  //       setIsVisible(true);
+  //     } else {
+  //       setIsVisible(false);
+  //     }
+  //   };
 
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
+  //   // Attach the scroll event listener
+  //   window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    // Animate from left to right with fade-in when the component becomes visible
-    if (isVisible) {
-      controls.start({ opacity: 1, x: 0 });
-    }
-  }, [isVisible, controls]);
+  // useEffect(() => {
+  //   // Animate from left to right with fade-in when the component becomes visible
+  //   if (isVisible) {
+  //     controls.start({ opacity: 1, x: 0 });
+  //   }
+  // }, [isVisible, controls]);
   return (
-    <motion.div initial={{ opacity: 0, x: -50 }}
-    animate={controls}
-    transition={{ duration: 1.5 }}
-    className="py-10" id="brands">
+    // <motion.div initial={{ opacity: 0, x: -50 }}
+    // animate={controls}
+    // transition={{ duration: 1.5 }}
+    // className="py-10" id="brands">
 
     <div className="py-10">
       <div className="container mx-auto text-center">
@@ -58,7 +58,7 @@ const Brands = () => {
         </div>
       </div>
     </div>
-    </motion.div>
+    // </motion.div>
   );
 };
 

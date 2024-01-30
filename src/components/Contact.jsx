@@ -39,7 +39,22 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="md:w-1/2 p-4">
           <h2 className="text-4xl font-bold mb-6 text-primary text-center md:mt-10">Contact Us</h2>
-          <p className='text-center text-xl mt-10 '>Need to get in touch? Fill out this contact form.</p>
+          {/* <p className='text-center text-xl mt-10 '>Need to get in touch? Fill out this contact form.</p> */}
+          <div className='space-y-2'>
+          <p className='text-xl font-bold' id="contactus">Office Address: </p>
+            <p>22, vrindavan residency behind  Dwarkesh Haveli</p>
+            <p>Nikol, Ahmedabad, 382350 </p>
+            <p>Phone Number: 9898650485, 7383221905</p>
+            <p>shreyawatertechllp@gmail.com</p>
+            <br></br>
+            <p className='text-xl font-bold' id="contactus">Factory Address: </p>
+            <p>Plot 1  Prince Industrial Hub-1 </p>
+            <p> Kuha -Kothiya road , Kuha</p>
+            <p> Ahmedabad, 380001</p>
+            <br></br>
+            
+            {/* <p>Gujarat, India</p> */}
+          </div>
         </div>
         <div className="md:w-1/2 p-4 h-auto">
           <div className="container mx-auto mt-4 p-5 bg-gray-100 rounded-md shadow-md flex">
