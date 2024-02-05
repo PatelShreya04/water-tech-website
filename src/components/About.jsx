@@ -1,9 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Nav from './Nav';
-import Footer from './Footer';
-import director1 from '../assets/skid/1.png'; // Import image for director 1
-import director2 from '../assets/skid/1.png'; // Import image for director 2
+import Footer from './Footer';2
 
 const About = () => {
   return (

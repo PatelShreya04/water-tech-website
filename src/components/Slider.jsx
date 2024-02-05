@@ -1,9 +1,9 @@
 // Slider.js
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import image1 from '../assets/slider-image-1.png';
-import image2 from '../assets/slider-image-2.png';
-import image3 from "../assets/slider-image-3.png"
+import image1 from '../assets/slider-1.png';
+import image2 from '../assets/slider-2.png';
+import image3 from "../assets/slider-3.png"
 
 const images = [image1, image2, image3 /* Add more image URLs as needed */];
 

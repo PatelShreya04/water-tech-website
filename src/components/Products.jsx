@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import uf from '../assets/filters/uf-filter.jpg';
-import copper1 from '../assets/filters/copper-alk-filter-1.jpg';
-import skid1 from '../assets/skid/1.png';
+
+import image1 from '../assets/4FF/4filter1.jpg'
+import image2 from '../assets/8ff/8filter.jpg'
+import image3 from '../assets/10ff/10filter.jpg'
+import image4 from '../assets/mskid/1.png'
 
 const Products = () => {
   return (
@@ -13,31 +13,41 @@ const Products = () => {
 
         <div className="flex md:flex-row flex-col justify-center md:gap-12 gap-10 pl-10 pr-10">
           {/* Cartridge Product */}
-          <a href="/uffilters" className="product-card">
+          <a href="/4ff" className="product-card">
             <img
-              src={uf}
+              src={image1}
               alt="Cartridge"
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">UF Filters</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">4''</p>
           </a>
 
           {/* Filters Product */}
-          <a href="/filters" className="product-card">
+          <a href="/8ff" className="product-card">
             <img
-              src={copper1}
+              src={image2}
               alt="Filters"
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px]transform hover:scale-125 transition-transform duration-300 ease-out ">Copper Alkaline Filters</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px]transform hover:scale-125 transition-transform duration-300 ease-out ">8''</p>
           </a>
 
           {/* Membrane Product */}
+          <a href="/10ff" className="product-card">
+            <img
+              src={image3}
+              alt="Membrane"
+              className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
+              style={{ borderRadius: '8px' }}
+            />
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">10''</p>
+          </a>
+
           <a href="/skid" className="product-card">
             <img
-              src={skid1}
+              src={image4}
               alt="Membrane"
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}

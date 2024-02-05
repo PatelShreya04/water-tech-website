@@ -2,30 +2,32 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
-import Filters from './components/Products/Filters';
+
 import Skid from './components/Products/Skid';
-import Pumps from './components/Products/Pumps';
-import Cartridgepro from './components/Products/Cartridgepro';
-import UFFilters from './components/Products/UFfilters';
+
+
 import About from './components/About';
 import Contact from './components/Contact';
-import Brands from './components/Brands';
+
 import BrandPage from './components/BrandPage';
-import Products from './components/Products';
+
 import PrductPage from './components/PrductPage';
-import Events from './components/Events';
+
 import EventPage from './components/EventPage';
+import Filterfour from './components/Products/Filterfour';
+import Filtereight from './components/Products/Filtereight';
+import Filterten from './components/Products/Filterten';
 function App() {
   return (
     <>
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/filters" element={<Filters />} />
-        <Route path="/cartridge" element={<Cartridgepro />} />
+       
         <Route path="/skid" element={<Skid />} />
-        <Route path="/pumps" element={<Pumps />} />
-        <Route path="/uffilters" element={<UFFilters />} />
+        <Route path="/4ff" element={<Filterfour />} />
+        <Route path="/8ff" element={<Filtereight />} />
+        <Route path="/10ff" element={<Filterten />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/brands" element={<BrandPage />} />
