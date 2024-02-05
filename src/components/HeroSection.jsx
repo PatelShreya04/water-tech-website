@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { motion} from 'framer-motion';
-import image1 from '../assets/water-tec-image.jpg'
+import image1 from '../assets/coverimage.jpg'
 
 
 const HeroSection = () => {
