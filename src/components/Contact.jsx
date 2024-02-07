@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
+import { FaWhatsapp } from 'react-icons/fa'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,6 +42,10 @@ const Contact = () => {
           <h2 className="text-4xl font-bold mb-6 text-primary text-center md:mt-10">Contact Us</h2>
           {/* <p className='text-center text-xl mt-10 '>Need to get in touch? Fill out this contact form.</p> */}
           <div className='space-y-2'>
+          <span className="whatsapp-link flex items-center ">
+        <FaWhatsapp className="whatsapp-icon text-green-600" />
+        <a href="https://wa.me/917383221905" className="ml-1 text-green-600 font-semibold">WhatsApp</a>
+      </span>
           <p className='text-xl font-bold' id="contactus">Office Address: </p>
             <p>22, Vrindavan Residency Behind  Dwarkesh Haveli</p>
             <p>Nikol, Ahmedabad, 382350 </p>

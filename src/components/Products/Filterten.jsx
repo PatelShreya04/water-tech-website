@@ -3,6 +3,7 @@ import image1 from '../../assets/10ff/10filter.jpg'
 import image2 from '../../assets/10ff/alkalinefilter10.png'
 import image3 from '../../assets/10ff/alkalinefilter20.png'
 import image4 from '../../assets/10ff/ca10.png'
+import image9 from '../../assets/10ff/10filter2.jpg'
 // import image5 from '../../assets/10ff/copper-alk-filter4.jpg'
 // import image6 from '../../assets/10ff/copperalkaline10.png'
 import image7 from '../../assets/10ff/filterscollage.jpg'
@@ -13,7 +14,7 @@ import Header from '../Header'
 
 const Filterten = () => {
     const filterImages = [
-        image1, image2, image3, image4, image7, image8
+        image1, image2, image3, image4, image7, image8,image9
       ];
     
       return (

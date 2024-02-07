@@ -3,7 +3,8 @@ import image1 from '../../assets/4FF/4filter1.jpg'
 import image2 from '../../assets/4FF/4filter2.jpg'
 import image3 from '../../assets/4FF/4filter3.jpg'
 import image4 from '../../assets/4FF/4filter4.jpg'
-// import image5 from '../../assets/4FF/4filter5.jpg'
+import image5 from '../../assets/4FF/4filter11.jpg'
+import image6 from '../../assets/4FF/4filter21.jpg'
 // import image6 from '../../assets/4FF/alkalinefilter4.png'
 import image7 from '../../assets/4FF/aquauf8.png'
 // import image8 from '../../assets/4FF/ca4.png'
@@ -19,7 +20,7 @@ import Header from '../Header'
 
 const Filterfour = () => {
     const filterImages = [
-        image1, image2, image3, image4
+        image1, image2, image3, image4,image5
       ];
     
       return (

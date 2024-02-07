@@ -1,8 +1,8 @@
 import React from 'react'
 import image1 from '../../assets/8ff/8filter.jpg';
 import image2 from '../../assets/8ff/8filter2.jpg'
-// import image3 from '../../assets/8ff/8filter3.jpg'
-// import image4 from '../../assets/8ff/8filter4.png';
+import image3 from '../../assets/8ff/8filter21.jpg'
+import image4 from '../../assets/8ff/8filter41.png';
 // import image5 from '../../assets/8ff/8filter5.jpg';
 // import image6 from '../../assets/8ff/copper-alk-filter-2.jpg'
 // import image7 from '../../assets/8ff/copperalkaline8.png';
@@ -13,7 +13,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 const Filtereight = () => {
     const filterImages = [
-        image1, image2, image8, image9
+        image1,image3,image4, image2,  image8, image9
       ];
     
       return (
