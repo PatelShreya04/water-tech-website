@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='space-y-2'>
                     <p className='text-xl font-bold' id="contactus">Location</p>
                     <p>Office:</p>
-                    <p>22, vrindavan residency behind  Dwarkesh Haveli</p>
+                    <p>22, Vrindavan Residency Behind  Dwarkesh Haveli</p>
                     <p>Nikol, Ahmedabad, 382350</p>
                     <br></br>
                     <p>Factory:</p>

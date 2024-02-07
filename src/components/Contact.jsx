@@ -21,7 +21,7 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:dharmip060@gmail.com?subject=Contact%20Form&body=
+    const mailtoLink = `mailto:shreyawatertechllp@gmail.com?subject=Contact%20Form&body=
       Name: ${formData.name}%0D%0A
       Phone: ${formData.phone}%0D%0A
       Subject: ${formData.subject}%0D%0A
@@ -42,7 +42,7 @@ const Contact = () => {
           {/* <p className='text-center text-xl mt-10 '>Need to get in touch? Fill out this contact form.</p> */}
           <div className='space-y-2'>
           <p className='text-xl font-bold' id="contactus">Office Address: </p>
-            <p>22, vrindavan residency behind  Dwarkesh Haveli</p>
+            <p>22, Vrindavan Residency Behind  Dwarkesh Haveli</p>
             <p>Nikol, Ahmedabad, 382350 </p>
             <p>Phone Number: 9898650485, 7383221905</p>
             <p>shreyawatertechllp@gmail.com</p>
