@@ -7,7 +7,7 @@ const Header = () => {
       {/* Logo on the left */}
       <div className='flex items-center'>
         {/* Replace 'YourLogo.png' with the actual path to your logo image */}
-        <img src={Logo} alt='Logo' className=' mr-2 h-14 md:w-36 w-[100px]' />
+        <img src={Logo} alt='Logo' className=' mr-2 h-14 md:w-30 w-[80px]' />
         <span className='text-white text-lg font-bold'></span>
       </div>
 
