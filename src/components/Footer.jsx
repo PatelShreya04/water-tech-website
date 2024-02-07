@@ -28,11 +28,11 @@ const Footer = () => {
                 </div>
                 <div className='space-y-2'>
                     <p className='text-xl font-bold' id="contactus">Contact</p>
+                    <p>AshokBhai Patel</p>
                     <p> 9898228284</p>
+                    <p>SureshBhai Patel</p>
                     <p>9898406504</p>
-                    <p>patelashok7056@gmail.com </p>
-                    <p>patelsuresh921@gmail.com </p>
-
+                    
 
                 </div>
                 <div className='space-y-2'>

@@ -29,9 +29,7 @@ const Slider = () => {
   }, [currentIndex]);
 
   return (
-    <div className="slider-container relative overflow-hidden w-full flex">
-      {/* <button onClick={prevSlide} className="prev-button md:block absolute top-1/2 transform -translate-y-1/2 left-4 text-2xl text-gray-300">&lt;</button> */}
-
+    <div className="slider-container relative overflow-hidden w-full h-96 flex justify-center items-center">
       <motion.div
         key={currentIndex}
         initial={{ opacity: 0 }}
@@ -43,11 +41,9 @@ const Slider = () => {
           key={currentIndex}
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="slider-image w-screen md:h-96"
+          className="slider-image max-w-full max-h-full"
         />
       </motion.div>
-
-      {/* <button onClick={nextSlide} className="next-button md:block absolute top-1/2 transform -translate-y-1/2 right-4 text-2xl text-gray-300"> &gt; </button> */}
     </div>
   );
 };
