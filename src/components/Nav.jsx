@@ -13,7 +13,7 @@ const Nav = () => {
         <div className=' p-2  bg-water'>
 
                
-                <div className=' flex md:space-x-10 space-x-4 font-sans text-white font-semibold md:text-lg text-[10px] text-center justify-center'>
+                <div className=' flex md:space-x-10 space-x-4 font-sans text-white font-semibold md:text-lg text-[8px] text-center justify-center'>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="/brands">Our Brands</a>

@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             <div className='bg-black text-white text-center p-2'>
-                &copy;{new Date().getFullYear()} ABC Corp. All rights reserved.
+            Designed and Managed By Infolanze
             </div>
         </div>
     );

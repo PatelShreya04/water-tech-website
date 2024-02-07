@@ -20,7 +20,7 @@ const Products = () => {
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">4''</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">4'' Filter</p>
           </a>
 
           {/* Filters Product */}
@@ -31,7 +31,7 @@ const Products = () => {
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px]transform hover:scale-125 transition-transform duration-300 ease-out ">8''</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px]transform hover:scale-125 transition-transform duration-300 ease-out ">8'' Filter</p>
           </a>
 
           {/* Membrane Product */}
@@ -42,7 +42,7 @@ const Products = () => {
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">10''</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">10'' Filter</p>
           </a>
 
           <a href="/skid" className="product-card">
@@ -52,7 +52,7 @@ const Products = () => {
               className="object-cover w-72 h-auto shadow-lg shadow-gray-600 border-5 border-solid border-gray-300 transform transition-transform duration-300 ease-out hover:scale-110"
               style={{ borderRadius: '8px' }}
             />
-            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">Skid</p>
+            <p className="mt-2 text-center text-primary font-bold md:text-2xl lg:text-[22px] text-[20px] transform hover:scale-125 transition-transform duration-300 ease-out">MS/SS Skid</p>
           </a>
         </div>
       </div>

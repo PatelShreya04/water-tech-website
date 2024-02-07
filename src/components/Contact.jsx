@@ -51,6 +51,7 @@ const Contact = () => {
             <p>Plot 1  Prince Industrial Hub-1 </p>
             <p> Kuha -Kothiya road , Kuha</p>
             <p> Ahmedabad, 380001</p>
+            <p>9898405604</p>
             <br></br>
             
             {/* <p>Gujarat, India</p> */}

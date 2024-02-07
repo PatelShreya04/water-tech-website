@@ -2,21 +2,22 @@ import React from 'react';
 
 
 import Footer from '../Footer';
-import skid1 from '../../assets/mskid/1.png'
-import skid2 from '../../assets/mskid/2.png'
-import skid3 from '../../assets/mskid/3.png'
-import skid4 from '../../assets/mskid/4.png'
-import skid5 from '../../assets/mskid/5.png'
-import skid6 from '../../assets/mskid/6.png'
-import skid7 from '../../assets/mskid/7.png'
-import skid8 from '../../assets/mskid/8.png'
-import skid9 from '../../assets/mskid/skid-last.jpg'
+import skid1 from '../../assets/skids/1.png'
+import skid2 from '../../assets/skids/2.png'
+import skid3 from '../../assets/skids/3.png'
+import skid4 from '../../assets/skids/4.png'
+import skid5 from '../../assets/skids/5.png'
+import skid6 from '../../assets/skids/6.png'
+import skid7 from '../../assets/skids/7.png'
+import skid8 from '../../assets/skids/8.png'
+import skid9 from '../../assets/skids/9.png'
+import skid10 from '../../assets/mskid/skid-last.jpg'
 import Nav from '../Nav';
 import Header from '../Header';
 
 
 const Skid = () => {
-  const Skidimages = [skid1, skid2, skid3, skid4, skid5, skid6, skid7, skid8, skid9]; // Add more membrane images if needed
+  const Skidimages = [skid1, skid2, skid3, skid4, skid5, skid6, skid7, skid8, skid9, skid10]; // Add more membrane images if needed
 
   return (
     <div>
