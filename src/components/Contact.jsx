@@ -44,7 +44,7 @@ const Contact = () => {
           <div className='space-y-2'>
           <span className="whatsapp-link flex items-center ">
         <FaWhatsapp className="whatsapp-icon text-green-600" />
-        <a href="https://wa.me/917383221905" className="ml-1 text-green-600 font-semibold">WhatsApp</a>
+        <a href="https://wa.me/919898406504" className="ml-1 text-green-600 font-semibold">WhatsApp</a>
       </span>
           <p className='text-xl font-bold' id="contactus">Office Address: </p>
             <p>22, Vrindavan Residency Behind  Dwarkesh Haveli</p>
