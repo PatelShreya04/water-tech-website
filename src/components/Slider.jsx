@@ -29,7 +29,7 @@ const Slider = () => {
   }, [currentIndex]);
 
   return (
-    <div className="slider-container relative overflow-hidden w-full md:h-[400px] lg:h-[550px] h-[180px] flex">
+    <div className="slider-container relative overflow-hidden w-full md:h-[400px] lg:h-[600px] h-[180px] flex">
       <motion.div
         key={currentIndex}
         initial={{ opacity: 0 }}
