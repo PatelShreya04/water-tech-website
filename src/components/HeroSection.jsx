@@ -14,7 +14,7 @@ const HeroSection = () => {
       className='flex md:flex-row flex-col mt-1 pl-2 pr-2'
       id="about"
     >
-          <div className="pt-5 pl-2 pr-2">
+          <div className=" pl-2 pr-2">
              
           <p className='font-bold md:text-4xl text-2xl text-blue-900 text-center '>WELCOME TO SHREYA WATER TECH LLP</p>
       <div className='flex md:flex-row flex-col mt-8 '>
