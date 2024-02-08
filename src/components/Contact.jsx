@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
 import { FaWhatsapp, FaFacebook } from 'react-icons/fa';
-import Instagram from '../assets/instagram.svg'
+import Instagram from '../assets/instagram.svg' 
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,28 @@ const Contact = () => {
     content: '',
     email: '',
   });
+
+  const form = useRef();
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_wie1poi', 'template_26vxi6q', form.current, 'EIoH3GIVRKiTHEom9')
+      // .sendForm('service_mff766b', 'template_nnpw6mo', form.current, 'aWuKHrieh55Peg4KN')
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mail successfully sent!! ");
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Error in sending mail..Try again! ");
+        }
+      );
+  };
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -76,7 +99,7 @@ const Contact = () => {
         </div>
         <div className="md:w-1/2 p-4 h-auto">
           <div className="container mx-auto mt-4 p-5 bg-gray-100 rounded-md shadow-md flex">
-            <form onSubmit={handleFormSubmit} className="w-full">
+            <form ref={form} onSubmit={sendEmail}className="w-full">
               <div className="mb-4">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-600">
                   Name
